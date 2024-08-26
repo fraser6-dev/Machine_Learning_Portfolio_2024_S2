@@ -1,0 +1,36 @@
+# Importing necessary libraries
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix, f1_score, accuracy_score
+# Load the dataset
+data = pd.read_csv("car.data")  # Replace with your actual file path
+# Display the first few rows of the dataset
+print(data.head())
+# Convert categorical variables to numerical using LabelEncoder
+le = LabelEncoder()
+for column in data.columns:
+    data[column] = le.fit_transform(data[column])
+# Splitting the data into features (X) and target label (y)
+X = data.iloc[:, :-1]  # All columns except the last one
+y = data.iloc[:, -1]   # The last column
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+# Feature scaling (normalizing the data)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+# Define the KNN model with k=11 and Euclidean distance
+knn = KNeighborsClassifier(n_neighbors=11, metric='euclidean')
+knn.fit(X_train, y_train)
+# Make predictions on the test set
+y_pred = knn.predict(X_test)
+# Evaluate the model
+conf_matrix = confusion_matrix(y_test, y_pred)
+f1 = f1_score(y_test, y_pred, average='weighted')  # Using weighted F1 score due to possible class imbalance
+accuracy = accuracy_score(y_test, y_pred)
+# Output results
+print("Confusion Matrix:\n", conf_matrix)
+print("F1 Score:", f1)
+print("Accuracy:", accuracy)
