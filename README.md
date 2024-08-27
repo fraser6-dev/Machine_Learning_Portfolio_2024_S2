@@ -15,17 +15,37 @@ Number of Neighbors - k
 Distance Metric (Euclidean, Manhattan, etc.)
 Evaluation Metrics:
 
-Accuracy
-Confusion Matrix
-Precision, Recall, F1-Score
-2. Linear Regression
-Linear Regression is a parametric algorithm that models the relationship between a dependent variable and one or more independent variables. In the given project, it will be used to predict the area of forest that will be affected by fire based on environmental factors.
 
-Hyperparameters:
+### essay/
+Includes a detailed essay on neural networks.
 
-Regularization (L2)
-Learning Rate
-Evaluation Metrics:
+- **essay_on_neural_networks.md**: Markdown file covering the understanding of neural networks, including:
+  - Architecture and Components
+  - Different Types and Applications
+  - Training Process and Techniques
+  - References and Sources
 
-Mean Squared Error (MSE)
-R-squared (R²)
+## Project Dates
+
+- **Start Date**: 19th of Aug 2024
+- **Completion Date**: 24th of Aug 2024
+
+## References and Sources
+
+1. Statistics Solutions (n.d.) How to conduct linear regression. Available at: https://www.statisticssolutions.com/free-resources/directory-of-statistical-analyses/how-to-conduct-linear-regression/ (Accessed: 27 August 2024).
+
+2. IBM (n.d.) K-Nearest Neighbors (KNN). Available at: https://www.ibm.com/topics/knn (Accessed: 27 August 2024).
+
+3. MIT News (2017) Explained: Neural networks and deep learning. Available at: https://news.mit.edu/2017/explained-neural-networks-deep-learning-0414 (Accessed: 27 August 2024).
+
+## How to Use
+
+1. Clone the repository: `git clone https://github.com/yourusername/your-repository.git`
+2. Navigate to the desired folder (e.g., `KNN.ipynb` or `Year10IT Forest Fires.ipynb/`).
+3. Run the Python scripts using Python 3.x.
+4. Read the essay in the `Machines Learn from Data` folder for detailed insights into neural networks.
+
+## Contact
+
+For any questions or further information, please reach out to Fraser Gardiner at fraser.gardiner@cgs.act.edu.au.
+
