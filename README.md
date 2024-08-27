@@ -40,7 +40,7 @@ Includes a detailed essay on neural networks.
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/yourusername/your-repository.git`
+1. Clone the repository: `git clone(https://github.com/fraser6-dev/Machine_Learning_Portfolio_2024_S2.git)`
 2. Navigate to the desired folder (e.g., `KNN.ipynb` or `Year10IT Forest Fires.ipynb/`).
 3. Run the Python scripts using Python 3.x.
 4. Read the essay in the `Machines Learn from Data` folder for detailed insights into neural networks.
